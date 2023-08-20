@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeNumberGenerator.InputValidator
 {
-    internal interface IInputValidator
+    public interface IInputValidator
     {
         (bool valid, string errorMessage, int parsedNumber) Validate(string input, int maxNumberOfPrimes);
     }
